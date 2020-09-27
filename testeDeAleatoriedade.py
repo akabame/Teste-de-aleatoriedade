@@ -17,10 +17,10 @@ def longRunTest(binario):
         zero = zero + '0'
         one = one + '1'
         
-        if zero in binario or one in binario:
-            return False
-        else:
-            return True
+    if zero in binario or one in binario:
+        return False
+    else:
+        return True
         
 def runTest(binario):
 
@@ -129,7 +129,7 @@ for i in binario:
 #test4
 test4 = []     
 for i in binario:
-    test4.append(runTest(i))
+    test4.append(longRunTest(i))
 
 df = pd.DataFrame()
 df['monobitTest'] = test1
